@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) 
+{	int x1,y1,x2,y2,dot_x,dot_y;
+	x1,y1,x2,y2=scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+	dot_x,dot_y=scanf("%d%d",&dot_x,&dot_y);
+	
+	if (dot_x>x1 && dot_x<x2 && dot_y>y1 && dot_y<y2) {
+	printf("in");
+	}		
+	else if (dot_x>x2 || dot_x<x1 || dot_y>y2 || dot_y<y1) {
+		printf("out");
+	}
+	else printf("line");
+	return 0;
+}
